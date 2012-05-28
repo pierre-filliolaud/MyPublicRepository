@@ -1,0 +1,14 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-05-28 10:11:58
+project --topLevelPackage com.my.gae --projectName gaetest --java 6 
+persistence setup --provider DATANUCLEUS --database GOOGLE_APP_ENGINE
+entity jpa --class ~.domain.Person
+field string --fieldName name
+web gwt setup
+q
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-05-28 10:13:46
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-05-28 10:14:22
+web gwt all --proxyPackage ~.client.proxy --requestPackage ~.client.request
+web gwt gae update
+logging setup --level DEBUG
+q
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-05-28 10:15:03
